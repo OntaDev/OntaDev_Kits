@@ -80,6 +80,7 @@ public class KitService {
         return kits.size();
     }
 
+    @SuppressWarnings("BooleanMethodIsAlwaysInverted")
     public static boolean isValidId(String id) {
         return id != null && VALID_ID.matcher(id.toLowerCase(Locale.ROOT)).matches();
     }
@@ -158,9 +159,8 @@ public class KitService {
     private Kit createExample() {
         Kit kit = new Kit("starter");
         kit.setDisplayName("<#34D399>Стартовый набор");
-        kit.setDescription(new ArrayList<>(Arrays.asList(
-                "<#CBD5E1>Базовый набор для новичка.",
-                "<#6B7280>Измени его: /kit edit starter")));
+        kit.setDescription(new ArrayList<>(List.of(
+                "<#CBD5E1>Базовый набор для новичка.")));
         kit.setIcon(Material.IRON_SWORD);
         kit.setCooldown(config.getDefaultCooldown());
 
