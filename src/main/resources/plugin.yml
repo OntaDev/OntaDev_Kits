@@ -1,0 +1,32 @@
+name: OntaDev_Kits
+version: '${project.version}'
+main: com.ontadev.kits.OntaDevKitsPlugin
+api-version: '1.16'
+load: POSTWORLD
+authors: [ OntaDev ]
+depend: [ OntaDev_Libs ]
+
+commands: {}
+
+permissions:
+  kits.use:
+    description: Открывать меню наборов и получать доступные наборы
+    default: true
+  kits.admin:
+    description: Создание, редактирование и удаление наборов
+    default: op
+  kits.give:
+    description: Выдавать наборы другим игрокам
+    default: op
+  kits.reload:
+    description: Перезагружать конфигурацию
+    default: op
+  kits.bypass.cooldown:
+    description: Игнорировать задержку и одноразовость наборов
+    default: false
+  kits.bypass.wipe:
+    description: Брать наборы во время вайпа
+    default: op
+  kits.bypass.permission:
+    description: Брать наборы без индивидуального права
+    default: op
