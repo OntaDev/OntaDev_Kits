@@ -104,7 +104,7 @@ public class MenuConfig extends YamlConfig {
                 "<description>",
                 LINE,
                 "<#CBD5E1>Статус: <#34D399>Доступно",
-                "<#CBD5E1>Предметов: <#FBBF24><items> <#4B5563>| <#6B7280>ID: <#FBBF24><id>",
+                "<#CBD5E1>Предметов: <#FBBF24><items>",
                 "<#CBD5E1>Задержка: <#FBBF24><cooldown>",
                 " ",
                 "<#34D399>ЛКМ <#6B7280>- получить",
@@ -117,7 +117,6 @@ public class MenuConfig extends YamlConfig {
                 "<#CBD5E1>Предметов: <#FBBF24><items>",
                 "<#CBD5E1>Статус: <#F87171>Недоступно",
                 "<#CBD5E1>Доступен через: <#FBBF24><remaining>",
-                "<#6B7280>ID: <#FBBF24><id>",
                 " ",
                 "<#34D399>ПКМ <#6B7280>- предпросмотр");
 
@@ -128,7 +127,6 @@ public class MenuConfig extends YamlConfig {
                 "<#CBD5E1>Предметов: <#FBBF24><items>",
                 "<#CBD5E1>Статус: <#F87171>Недоступно",
                 "<#F87171>Одноразовый набор уже получен",
-                "<#6B7280>ID: <#FBBF24><id>",
                 " ",
                 "<#34D399>ПКМ <#6B7280>- предпросмотр");
 
@@ -137,8 +135,6 @@ public class MenuConfig extends YamlConfig {
                 "<description>",
                 LINE,
                 "<#CBD5E1>Статус: <#F87171>Нет доступа",
-                "<#6B7280>ID: <#FBBF24><id>",
-                "<#6B7280>Нужно право: <permission>",
                 " ",
                 "<#34D399>ПКМ <#6B7280>- предпросмотр");
 
@@ -148,7 +144,6 @@ public class MenuConfig extends YamlConfig {
                 LINE,
                 "<#CBD5E1>Статус: <#F87171>Недоступно",
                 "<#F87171>Идёт вайп. Выдача наборов откроется через <#FBBF24><wipe-time>",
-                "<#6B7280>ID: <#FBBF24><id>",
                 " ",
                 "<#34D399>ПКМ <#6B7280>- предпросмотр");
 
@@ -161,6 +156,7 @@ public class MenuConfig extends YamlConfig {
         @SerializedName("admin-footer")
         private Message adminFooter = new Message(
                 " ",
+                "<#6B7280>ID: <#FBBF24><id>",
                 "<#F59E0B>Shift+ПКМ <#6B7280>- редактировать",
                 "<#F59E0B>Shift+ЛКМ <#6B7280>- вкл/выкл набор");
     }
